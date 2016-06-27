@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:p="http://www.springframework.org/schema/p"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xmlns:mvc="http://www.springframework.org/schema/mvc"
+    xmlns:aop="http://www.springframework.org/schema/aop"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+http://www.springframework.org/schema/context
+http://www.springframework.org/schema/context/spring-context-3.0.xsd
+http://www.springframework.org/schema/mvc
+http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd
+http://www.springframework.org/schema/aop 
+http://www.springframework.org/schema/aop/spring-aop-3.0.xsd">
+
+	<!-- <bean id="point1" class="com.babu.spring.learning.beans.Point" name="pointA">
+		<property name="x" value="0"/>
+		<property name="y" value="0"/>
+	</bean>
+	
+	<bean id="point3" class="com.babu.spring.learning.beans.Point" name="pointB">
+		<property name="x" value="0"/>
+		<property name="y" value="5"/>
+	</bean>
+	
+	<bean id="point2" class="com.babu.spring.learning.beans.Point" name="pointC">
+		<property name="x" value="0"/>
+		<property name="y" value="-5"/>
+	</bean>
+	
+	<bean id="triangleParent" abstract="true">
+		<property name="points">
+			<list>
+				<ref bean="point1"/>
+			</list>
+		</property>
+	</bean>
+	
+	<bean id="triangle" class="com.babu.spring.learning.beans.Triangle" parent="triangleParent">
+		<property name="pointA" ref="point1"/>
+		<property name="pointB" ref="point2"/>
+		<property name="pointC" ref="point3"/>
+		
+		Overrides if not merged
+		<property name="points">
+			<list merge="true">
+				<ref bean="point2"/>
+				<ref bean="point3"/>
+			</list>
+		</property>
+	</bean>
+
+<context:annotation-config/>
+<context:component-scan base-package="com.babu.spring.learning.beans"/> -->
+<<!-- bean id="triangle" class="com.babu.spring.learning.aop.model.Triangle">
+	<property name="name" value="Equilateral triangle"/>
+</bean>
+
+<bean id="circle" class="com.babu.spring.learning.aop.model.Circle">
+	<property name="name" value="A big circle"/>
+</bean>
+
+<bean id="shapeService" class="com.babu.spring.learning.aop.service.ShapeService" autowire="byName"/>
+<aop:aspectj-autoproxy/>
+<context:annotation-config/>
+<context:component-scan base-package="com.babu.spring.learning.aop.aspects"/> -->
+<bean></bean>
+</beans>
