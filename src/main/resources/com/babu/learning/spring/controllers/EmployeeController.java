@@ -37,8 +37,10 @@ public class EmployeeController {
 		newEmployee.setUserName((String)request.getParameter("userName"));
 		newEmployee.setPassword((String)request.getParameter("password"));
 		newEmployee.setSalary(Integer.parseInt((String)request.getParameter("salary")));
-		if(employeeManager.addNewEmployee(newEmployee))
-			return new ModelAndView("listemployess","message", newEmployee.getFirstName()+" "+newEmployee.getLastName() +" Employee added successfully");
-		return new ModelAndView("listemployees", "message", newEmployee.getFirstName()+" "+newEmployee.getLastName()+" cannot be added. Try again later.");
+		if(employeeManager.addNewEmployee(newEmployee)){
+			
+			return new ModelAndView("employeeslist", "message", newEmployee.getFirstName()+" "+newEmployee.getLastName() +" Employee added successfully");
+		}
+		return new ModelAndView("employeeslist", "message", newEmployee.getFirstName()+" "+newEmployee.getLastName()+" cannot be added. Try again later.");
 	}
 }
